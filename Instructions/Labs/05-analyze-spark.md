@@ -65,7 +65,7 @@ Now you're ready to run code that loads the data into a *dataframe*. Dataframes 
 3. A new code cell containing the following code should be added to the notebook:
 
     ```python
-   df = spark.read.format("csv").option("header","true").load("Files/orders/2019.csv")
+   df = spark.read.format("csv").option("header","true").load("abfss://8bc9a86c-4afa-43a9-944a-a1ff0aa45804@onelake.dfs.fabric.microsoft.com/3db5bd89-ba00-4cc3-b6d7-76ac7f6fb0fa/Files/orders/2019.csv")
    # df now is a Spark DataFrame containing CSV data from "Files/orders/2019.csv".
    display(df)
     ```
